@@ -1,15 +1,17 @@
 # theOPENhandy — WIP
 
 theOPENhandy is an opensource Firmware for theHandy (Gen1).  
+
+The goal is simple:  
+A completely offline, locally controlled Handy that integrates easily with automation tools, local apps, and real-time motion software.
+Finetune the Motor/Motion to fit different needs.
+
 It removes all cloud dependencies and replaces them with a fast, fully local control stack built around:
 
 - **Local HTTP API** for direct control  
 - **Real-time UDP (TCode)** for high-speed motion input 
 - **On-device configuration portal** (no accounts, no cloud)  
 
-The goal is simple:  
-A completely offline, locally controlled Handy that integrates easily with automation tools, local apps, and real-time motion software.
-Finetune the Motor/Motion to fit different needs.
 ---
 
 ## What the Firmware Does
