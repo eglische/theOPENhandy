@@ -5,11 +5,11 @@ This guide explains how to back up the original Handy firmware, connect a USB-TT
 
 ## Important Information
 
-- If you solder the flashing pins to the PCB, make sure they face in the **same direction as the physical buttons**.
-- Only **3.3 V** USB-TTL adapters must be used. **Never connect 5 V** to any ESP32 pin.
+- If you solder the header (pins) to the PCB, make sure they face in the **same direction as the physical buttons**.
+- Only **3.3 V** USB-TTL adapters must be used. **Never connect 5 V**.
 - Opening and flashing the device may **void your warranty** and can potentially **brick the device** if done incorrectly.
-- This is a **WIP (Work in Progress)** project. By using it, you are actively participating in development.  
-  Feedback is welcome and will be considered.
+- This is a **WIP (Work in Progress)** project. By using it, you are actively participating in development;  
+  Feedback is welcome and will be considered. Without neither positive nor negative feedback, this will not move forward. So consider it.
 - If you don’t want to post publicly under GitHub Issues, you can reach me on Discord: **Yeti_ch**
 - We do **not** share the official firmware, configuration data, or dumps, nor will we or i disclose who is involved in the project.
 
@@ -22,9 +22,9 @@ https://youtu.be/LiFM278WkV0
 ## 1. Hardware Required
 
 - Handy device with the accessible PCB header (see `Handy_PCB.jpg`)
-- USB-TTL UART adapter (**3.3 V only**)
-- Dupont jumper wires (female–female)
-- Optional: 6-pin male header
+- USB-TTL UART adapter (**3.3 V**)
+- Dupont jumper wires
+- 6-pin male header, either hold against the pad on the pcb or soldered to it.
 
 ---
 
@@ -57,11 +57,13 @@ Pin order (1 → 6):
 | 3.3V      | 3.3V |
 | TX        | RX |
 | RX        | TX |
+| EN        | GND |
+| IO0       | not connected |
 | GND       | GND |
-| IO0 & GND | Tie IO0 to GND on the dongle |
+
 
 Most USB-TTL adapters have at least two GND pins.  
-Tie **GND ↔ GND** and **IO0 ↔ GND** so the adapter powers the ESP32 in boot mode when needed.
+Tie **GND ↔ IO0** to jump into Bootmode while uploading:
 
 ### Entering Bootloader Mode
 
@@ -77,6 +79,9 @@ Bootloader and partitions are untouched—you only flash the application.
 ## 4. Install esptool
 
 ### Windows
+Either Install/Download yourself: https://github.com/espressif/esptool/releases
+
+or: 
 
 1. Install Python: https://www.python.org/downloads/  
 2. Open *Command Prompt* and run: 
