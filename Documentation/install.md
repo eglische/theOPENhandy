@@ -22,9 +22,15 @@ https://youtu.be/LiFM278WkV0
 ## 1. Hardware Required
 
 - Handy device with the accessible PCB header (see `Handy_PCB.jpg`)
-- USB-TTL UART adapter (**3.3 V**)
+- USB-TTL UART adapter (**3.3 V**, common chipset such as **CP2102**, **CH340**, or **FT232**)
 - Dupont jumper wires
 - 6-pin male header, either hold against the pad on the pcb or soldered to it.
+
+If you search online for a USB-TTL (USB-to-Serial) adapter to purchase:
+
+- “**USB to TTL 3.3V adapter**”
+- “**CP2102 UART 3.3V**”
+- “**CH340 3.3V serial adapter**”
 
 ---
 
