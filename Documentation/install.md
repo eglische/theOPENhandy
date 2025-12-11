@@ -94,12 +94,23 @@ Replace `/dev/ttyUSB0` with your actual port.
 esptool.py --chip esp32 -p /dev/ttyUSB0 -b 460800 read_flash 0 ALL full_flash.bin
 This creates `full_flash.bin` of the factory firmware.
 
+### What is included in a full-flash dump?
+A full-flash read (read_flash 0 <size>) copies every byte of the SPI flash, including bootloader, partition table, OTA data, NVS, and the application firmware.
+If you read the entire flash region, you get:
+Bootloader (0x0000)
+Partition table (0x8000)
+OTA data (0xe000)
+NVS
+PHY/NVS calibration data
+Application firmware (0x10000 or wherever your app is)
+All other partitions
+
 ---
 
 ## 6. Flash the theOPENhandy Firmware
 
 Download the latest firmware from the GitHub Release tab:  
-`md5-openhandy_v0.1_21112025_build021.bin`
+`md5-openhandy_v0.1_21112025_build022.bin`
 
 ### Windows
 esptool.exe --chip esp32 -p COM3 -b 460800 write_flash 0x10000 md5-openhandy_v0.1_21112025_build021.bin
