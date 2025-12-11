@@ -26,7 +26,7 @@ It removes all cloud dependencies and replaces them with a fast, fully local con
 - Fully self-contained — no external dependencies once flashed
 
 ## Installation
-Install instructions for Flashing can be found in ./Documentation/install.md
+Install Instructions for Flashing can be found in ./Documentation/install.md
 
 ## Setup Mode
 
@@ -51,7 +51,6 @@ Use the portal to configure:
 
 ## LED Status Indicators
 
-|------------------------------|-------------------------------------------|
 | LED State                    | Meaning                                   |
 |------------------------------|-------------------------------------------|
 | **Violet (blinking)**        | Referencing / bootup                      |
@@ -61,7 +60,6 @@ Use the portal to configure:
 | **Blue (solid)**             | UDP stream active                         |
 | **Violet (solid)**           | Wireless AP mode / captive portal         |
 | **Blue ↔ Violet alternating**| Establishing Voxta interaction            |
-|------------------------------|-------------------------------------------|
 
 ---
 
@@ -82,57 +80,15 @@ You can operate the device via:
 
 - **LEFT / RIGHT**
   - Adjust speed
+  - Buttons will be changed further down the road to reseble how the original worked.
 
 - **POWER**
   - Toggle motion on/off
 
 ---
 
-## HTTP API
+## Access via Browser:
 
 Device reachable at:
 
-http://openhandy.local
-or:
-http://<DEVICE_IP>
-
-
-For example:
-http://192.168.1.42
-
-All API endpoints use **HTTP GET** and return **JSON**.
-
-Start / Stop Motion
-GET /api/motion?action=start
-GET /api/motion?action=stop
-
-Speed Control
-GET /api/motion?action=faster
-GET /api/motion?action=slower
-
-Set an absolute speed:
-GET /api/motion?action=setspeed&sp=XX
-Example:
-GET /api/motion?action=setspeed&sp=70
-
-Pattern Selection
-Mode	Pattern
-0	Sine
-1	Bounce
-2	Double Bounce
-
-Set pattern:
-GET /api/motion?action=setpattern&mode=0
-GET /api/motion?action=setpattern&mode=1
-GET /api/motion?action=setpattern&mode=2
-
-Stroke Cropping
-lower and upper are fractions from 0.0 to 1.0.
-
-
-Example:
-GET /api/motion?action=setcrop&lower=0.10&upper=0.20
-
-This applies:
-10% crop at the bottom
-20% crop at the top
+http://openhandy.local or: http://<DEVICE_IP>
