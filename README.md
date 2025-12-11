@@ -2,7 +2,7 @@
 
 theOPENhandy is an opensource Firmware for theHandy (Gen1).  
 
-The goal is simple:  
+The goal:  
 A completely offline, locally controlled Handy that integrates easily with automation tools, local apps, and real-time motion software.
 Finetune the Motor/Motion to fit different needs.
 
@@ -25,11 +25,8 @@ It removes all cloud dependencies and replaces them with a fast, fully local con
 - Boots without cloud checks or external services  
 - Fully self-contained — no external dependencies once flashed
 
-
-
 ## Installation
-Install instructions for Flashing can be found in the /Documentation folder
----
+Install instructions for Flashing can be found in ./Documentation/install.md
 
 ## Setup Mode
 
@@ -104,22 +101,6 @@ For example:
 http://192.168.1.42
 
 All API endpoints use **HTTP GET** and return **JSON**.
-
----
-
-### Examples for API
-
-GET /api/motion?action=status
-Response example:
-
-```json
-{
-  "ok": true,
-  "speed": 50,
-  "cutLower": 0.10,
-  "cutUpper": 0.20,
-  "pattern": 1
-}
 
 Start / Stop Motion
 GET /api/motion?action=start
