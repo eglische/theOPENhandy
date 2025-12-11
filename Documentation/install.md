@@ -131,7 +131,7 @@ All other partitions
 
 ## 6. Flash the theOPENhandy Firmware
 
-Download the latest firmware from the GitHub Release tab:  
+Download the latest firmware from the GitHub in the Main folder:  
 `md5-openhandy_v0.1_21112025_build022.bin`
 
 ### Windows
