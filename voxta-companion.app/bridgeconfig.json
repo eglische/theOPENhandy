@@ -1,0 +1,35 @@
+{
+  "voxtaBaseUrl": "http://127.0.0.1:5384",
+  "signalRUrl": "http://127.0.0.1:5384/hub",
+  "actionContextKey": "OpenHandyActions",
+
+  "voxtaAction": {
+    "name": "sextoy_control",
+    "description": "Controls the stroking motion of a sextoy that is stimulating {{user}}.",
+    "timing": "AfterAssistantMessage",
+    "layer": "default",
+    "secret": "",
+    "note": "",
+    "setFlags": [],
+    "arguments": [
+      {
+        "name": "motion_state",
+        "type": "String",
+        "required": true,
+        "description": "Whether the device should move. Use 'start' to start motion or 'stop' to stop all motion."
+      },
+      {
+        "name": "stroke_type",
+        "type": "String",
+        "required": true,
+        "description": "Stroke pattern to use. Allowed values: 'sine', 'bounce', or 'double_bounce'."
+      },
+      {
+        "name": "speed",
+        "type": "String",
+        "required": false,
+        "description": "Stroke speed as a percentage from '10' (slowest) to '100' (fastest)."
+      }
+    ]
+  }
+}
