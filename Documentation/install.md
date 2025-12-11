@@ -1,7 +1,18 @@
 # Installing theOPENhandy Firmware
 
 This guide explains how to back up the original Handy firmware, connect a USB-TTL adapter, and flash the latest **md5-openhandy** release.  
-Only **3.3 V** USB-TTL adapters must be used. **Never connect 5 V** to any ESP32 pin.
+
+
+## Important Information
+
+- If you solder the flashing pins to the PCB, make sure they face in the **same direction as the physical buttons**.
+- Only **3.3 V** USB-TTL adapters must be used. **Never connect 5 V** to any ESP32 pin.
+- Opening and flashing the device may **void your warranty** and can potentially **brick the device** if done incorrectly.
+- This is a **WIP (Work in Progress)** project. By using it, you are actively participating in development.  
+  Feedback is welcome and will be considered.
+- If you don’t want to post publicly under GitHub Issues, you can reach me on Discord: **Yeti_ch**
+- We do **not** share the official firmware, configuration data, or dumps, nor will we or i disclose who is involved in the project.
+
 
 Youtube instruction for the disassembly can be found here:
 https://youtu.be/LiFM278WkV0
