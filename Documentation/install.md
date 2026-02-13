@@ -63,19 +63,19 @@ Pin order (1 → 6):
 | 3.3V      | 3.3V |
 | TX        | RX |
 | RX        | TX |
-| EN        | GND |
-| IO0       | not connected |
+| EN        | not connected |
+| IO0       | GND |
 | GND       | GND |
 
 
 Most USB-TTL adapters have at least two GND pins.  
-Tie **GND ↔ IO0** to jump into Bootmode while uploading:
+Tie **GND ↔ EN** to jump into Bootmode while uploading:
 
 ### Entering Bootloader Mode
 
 1. Power the Handy PCB through the USB-TTL (3.3 V).
 2. Start the flash command.
-3. When esptool prints `Connecting........`, **briefly short BOOT (IO0) to GND**.
+3. When esptool prints `Connecting........`, **briefly short EN to GND**.
 4. The ESP32 enters bootloader mode and accepts firmware.
 
 Bootloader and partitions are untouched—you only flash the application.
