@@ -4,16 +4,17 @@ theOPENhandy is an open-source firmware project for theHandy (Gen1).
 It exists to preserve user **autonomy, privacy, and control over hardware.**
 
 ---
-### On personal Note
+
 
 <details>
-<summary>(click to expand)</summary>
+<summary>### On personal Note (click to expand)</summary>
 Shoutout to the security-obsessed, dogma-driven, RFID-implanted pentester who runs the "other" forum:
-```
+
+
 Socrates condemned writing.
 You condemned the use of AI.
 The argument, however, still stands on its own.
-```
+
 
 
 My understanding of 2FA/MFA was questioned by this aforementioned person (I was called a moron, in other words).  
