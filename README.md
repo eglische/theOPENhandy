@@ -4,8 +4,10 @@ theOPENhandy is an open-source firmware project for theHandy (Gen1).
 It exists to preserve user **autonomy, privacy, and control over hardware.**
 
 ---
+### On personal Note
+
 <details>
-<summary>### On personal Note (click to expand)</summary>
+<summary>(click to expand)</summary>
 Shoutout to the security-obsessed, dogma-driven, RFID-implanted pentester who runs the "other" forum:
 ```
 Socrates condemned writing.
@@ -37,7 +39,6 @@ This project exists for those who don't want an app or API that phones home ever
 **Thank you, rant over.**
 
 </details>
----
 
 
 
