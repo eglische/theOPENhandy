@@ -5,9 +5,10 @@ It exists to preserve user **autonomy, privacy, and control over hardware.**
 
 ---
 
+### On personal Note 
 
 <details>
-<summary>### On personal Note (click to expand)</summary>
+<summary>(click to expand)</summary>
 Shoutout to the security-obsessed, dogma-driven, RFID-implanted pentester who runs the "other" forum:
 
 
