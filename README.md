@@ -33,6 +33,8 @@ Users should not be forced to link their identity to a device, directly or indir
 This project exists for those who don't want an app or API that phones home every time the toy is used, no matter how "secure" you make it. It can be misused given enough ambition, just like a community that enforces 2FA can still be infiltrated by a bad actor.
 
 **Thank you, rant over.**
+
+
 ---
 
 
