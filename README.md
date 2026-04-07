@@ -5,7 +5,7 @@ It exists to preserve user **autonomy, privacy, and control over hardware.**
 
 ---
 <details>
-<summary>On Personal Note (click to expand)</summary>
+<summary>### On personal Note (click to expand)</summary>
 Shoutout to the security-obsessed, dogma-driven, RFID-implanted pentester who runs the "other" forum:
 ```
 Socrates condemned writing.
@@ -13,7 +13,7 @@ You condemned the use of AI.
 The argument, however, still stands on its own.
 ```
 
-### On personal Note
+
 My understanding of 2FA/MFA was questioned by this aforementioned person (I was called a moron, in other words).  
 Yes, these mechanisms are standard for some and, in many cases, required on platforms like GitHub, which is, in this case, justified and a reasonable thing to have.  
 The futility of the attempt to discredit me ad hominem in this regard is proven by this very statement.  
